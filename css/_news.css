@@ -1,0 +1,86 @@
+.news {
+    padding: 80px 40px;
+    background: #fff;
+    text-align: left;
+}
+.news__title {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+.news__title .logo-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+}
+.news__grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: start;
+    margin-bottom: 50px;
+}
+.news__main {
+    position: relative;
+}
+.news__img-wrapper {
+    position: relative;
+}
+.news__img {
+    width: 100%;
+    border-radius: 10px;
+}
+.news__more {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-40%, -40%);
+    color: #008d7d;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #008d7d;
+    padding: 10px 20px;
+    border-radius: 100px;
+}
+.news__date {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 8px;
+    display: block;
+}
+.news__text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+.news__side {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.news__item {
+    display: flex;
+    flex-direction: column;
+}
+.news__img-mini img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.news__btn-wrapper {
+    text-align: center;
+}
+.news__btn {
+    display: inline-block;
+    padding: 14px 36px;
+    border: 1px solid #008d7d;
+    border-radius: 999px;
+    color: #008d7d;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.news__btn:hover {
+    background: #008d7d;
+    color: #fff;
+}

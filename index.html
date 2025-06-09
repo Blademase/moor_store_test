@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Royal</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./main.css" />
+
+    <script defer src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+</head>
+<body>
+<!-- Шапка -->
+<section class="hero">
+    <div class="hero__overlay">
+        <div class="hero__topbar">
+            <div class="hero__left">
+                <button class="hero__icon">
+                    <img src="assets/images/changeMod.svg" alt="mode icon" />
+                </button>
+                <a href="tel:+996556111444" class="hero__phone">+996 556 111 444</a>
+                <span class="hero__lang">Русский</span>
+            </div>
+            <a href="#" class="mobile_link">Квартиры и объекты</a>
+            <div class="hero__center">
+                <img src="assets/images/RoyalLogo.svg" alt="Royal Logo" class="hero__logo" />
+            </div>
+            <div class="hero__right">
+                <a href="#" class="hero__link">Квартиры и объекты</a>
+                <button class="hero__menu">
+                    <span class="material-icons">menu</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="hero__title">ROYAL</div>
+    </div>
+</section>
+
+<!-- Секция о нас -->
+<section class="about">
+    <div class="about__container">
+        <div class="about__left">
+
+            <div class="about__info">
+
+                <p class="about__label">О компании</p>
+
+                <img src="assets/images/about-old-house.png" alt="О компании" class="about__img-small" />
+
+                <p class="about__desc">
+                    <strong>Royal</strong> — Строительная Компания, Которая Сдает Свои Объекты В Эксплуатацию В Обозначенные Сроки.
+                </p>
+                <p class="about__text">
+                    Наши Объекты Строятся В 5-Минутной Ходьбе От Парков, Прогулочных Зон, Основных Объектов Сообщества С Удобной Транспортной Развязкой.
+                </p>
+
+                <a href="#" class="about__btn">Читать все</a>
+            </div>
+        </div>
+
+        <div class="about__right">
+            <h2 class="about__title">
+                <span class="green">ДЛЯ НАС СТРОИТЕЛЬСТВО</span> — ЭТО <br />
+                ИСКУССТВО СОЗДАВАТЬ НАДЁЖНЫЕ, <br />
+                ФУНКЦИОНАЛЬНЫЕ И ВДОХНОВЛЯЮЩИЕ ПРОСТРАНСТВА
+            </h2>
+            <div class="mobile_version_about_img">
+                <div class="about__img-small_container">
+                <p class="about__label_mobile">О компании</p>
+            <img src="assets/images/about-old-house.png" alt="О компании" class="about__img-small_mobile" />
+                </div>
+            <img src="assets/images/about-building.png" alt="Здание" class="about__img-large" />
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Секция проекты -->
+
+<section class="projects">
+    <div class="projects__header">
+        <div class="projects__top">
+            <h2 class="projects__title">Фильтруйте. Сравнивайте. <span class="green">Выбирайте.</span></h2>
+            <span class="projects__label">Объекты</span>
+        </div>
+
+        <div class="projects__filters">
+            <div class="projects__toggle-group">
+                <button class="projects__filter-btn active" data-type="all">30 объектов</button>
+                <button class="projects__filter-btn" data-type="residential">8 Жилых домов</button>
+            </div>
+        </div>
+
+        <div class="projects__tags">
+            <div class="projects__tag-list">
+                <button class="tag active">Все</button>
+                <button class="tag">Строящиеся</button>
+                <button class="tag">Завершённые</button>
+                <button class="tag">На стадии завершения</button>
+            </div>
+
+            <div class="projects__tag-list">
+                <select class="projects__select">
+                    <option>Выберите локацию</option>
+                </select>
+
+                <div class="projects__range">
+                    <input type="number" placeholder="от 5 этажей" />
+                    <span class="projects__range-dash">-</span>
+                    <input type="number" placeholder="до 28 этажей" />
+                </div>
+
+                <button class="tag">Квартиры</button>
+                <button class="tag">Офисы</button>
+                <button class="tag">Коттеджи</button>
+                <button class="tag">Коммерческие помещения</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects__grid"  id="projectsGrid">
+        <div class="project-card">
+            <h3 class="project-card__title">Ынтымак</h3>
+            <div class="project-card__location">
+                <div class="project-card__badge badge--orange">Строится</div>
+                <div class="project-card__desc">
+                    <img src="assets/images/location-pin.svg">
+                    <span>   Молдобасанова 8а</span>
+                </div>
+                <div class="project-card__desc">
+                    <img src="assets/images/home.svg">
+                    <span> Центр отдыха</span>
+                </div>
+            </div>
+            <img src="assets/images/project1.png" alt="Ынтымак" />
+
+        </div>
+
+        <div class="project-card">
+            <h3 class="project-card__title">Tower</h3>
+            <div class="project-card__location">
+                <div class="project-card__badge badge--green">Завершен</div>
+                <div class="project-card__desc">
+                    <img src="assets/images/location-pin.svg">
+                    <span>пр. Чынгыз Айтматова</span>
+                </div>
+                <div class="project-card__desc">
+                    <img src="assets/images/home.svg">
+                    <span>Жилой дом</span>
+                </div>
+            </div>
+            <img src="assets/images/project2.png" alt="Tower" />
+        </div>
+
+        <div class="project-card">
+            <h3 class="project-card__title">Royal Resort</h3>
+            <div class="project-card__location">
+            <div class="project-card__badge badge--orange">Строится</div>
+                <div class="project-card__desc">
+                 <img src="assets/images/location-pin.svg">
+                <span>с. Чок-Тал Иссык-Куль</span>
+                </div>
+                <div class="project-card__desc">
+                    <img src="assets/images/home.svg">
+                    <span>Центр отдыха</span>
+                </div>
+            </div>
+            <img src="assets/images/project3.png" alt="Royal Resort" />
+        </div>
+
+        <div class="project-card">
+            <h3 class="project-card__title">Cambridge</h3>
+            <div class="project-card__location">
+            <div class="project-card__badge badge--green">Завершен</div>
+            <div class="project-card__desc">
+                <img src="assets/images/location-pin.svg">
+                <span>  Малдыбаева 279</span>
+            </div>
+            <div class="project-card__desc">
+                <img src="assets/images/home.svg">
+                <span>Жилой дом</span>
+            </div>
+        </div>
+            <img src="assets/images/project4.png" alt="Cambridge" />
+        </div>
+    </div>
+
+    <div class="projects__btn-wrapper">
+        <a href="#" class="projects__btn">Смотреть все</a>
+    </div>
+</section>
+
+<!-- Секция статистики -->
+
+<section class="stats">
+    <div class="stats__overlay">
+        <div class="stats__content">
+            <h2 class="stats__title">
+                <span class="stats__logo">Royal</span>
+                — строительная компания, которой доверяют.<br />
+                Строим с качеством, на которое можно опереться
+            </h2>
+
+            <div class="stats__grid">
+                <div class="stats__item">
+                    <div class="stats__number">3000+</div>
+                    <div class="stats__label">рабочих мест создано</div>
+                </div>
+                <div class="stats__item">
+                    <div class="stats__number">29</div>
+                    <div class="stats__label">объектов</div>
+                </div>
+                <div class="stats__item">
+                    <div class="stats__number">13</div>
+                    <div class="stats__label">лет на рынке Кыргызстана</div>
+                </div>
+                <div class="stats__item">
+                    <div class="stats__number">5000+</div>
+                    <div class="stats__label">довольных клиентов</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="reviews">
+    <div class="reviews__header">
+        <h2 class="reviews__title">
+            Реальные мнения — <span class="green">настоящие эмоции</span>
+        </h2>
+        <span class="reviews__subtitle">Отзывы</span>
+    </div>
+
+
+
+    <div class="reviews__grid">
+
+        <section class="reviews">
+            <div class="reviews__header">
+                <h2 class="reviews__title">
+                    Реальные мнения — <span class="green">настоящие эмоции</span>
+                </h2>
+                <span class="reviews__subtitle">Отзывы</span>
+            </div>
+
+            <div class="reviews__grid">
+                <div class="review-first_row">
+                <div class="review-card">
+                    <div class="review-first_card">
+                        <div class="review-first_card_text">
+                    <p class="review-card__text">
+                        Мы рады, что вы выбираете нас!<br />
+                        <a href="#" class="review-card__more">подробнее</a>
+                    </p>
+
+                        </div>
+                    <img src="assets/images/review1.png" alt="Насгуль" class="review-card__img" />
+                    </div>
+
+                </div>
+
+                <p class="reviews__quote">
+                    Когда доверие строится на опыте и деталях — слушайте тех, кто уже выбрал <span class="logo-text">Royal</span>.
+                </p>
+                </div>
+
+                <div class="review-card--right">
+                    <div class="review-second-card-text">
+                        <p class="review-card__author">– Насгуль Беккулаева, <span>2024</span></p>
+                        <span class="review-card__badge">YOUTUBE</span>
+                    </div>
+                    <div class="review-second-card">
+
+                        <div class="review-card-second-right">
+                    <p class="review-card__text">
+                        «МЫ НА СЕБЕ ЭКОНОМИТЬ НЕ БУДЕМ», – прораб жилого комплекса Royal Касымов Шакир
+                    </p>
+                    <p class="review-card__author">– Касымов Шакир, <span>2024</span></p>
+                        </div>
+                        <img src="assets/images/review2.png" alt="Шакир" class="review-card__img" />
+
+                    </div>
+                </div>
+
+                <div class="review-third-card">
+                    <div class="review-third-card-text">
+                        <p class="review-card__text">
+                            Отзыв клиентки из Дубая, которая приехала купить квартиру и выбрала наш ЖК ARUA!
+                        </p>
+                        <p class="review-card__author">– Анастасия Владимировна, <span>2024</span></p>
+                        <span class="review-card__badge">YOUTUBE</span>
+                    </div>
+                    <img src="assets/images/review3.png" alt="Анастасия" class="review-card__img" />
+
+                </div>
+            </div>
+
+            <div class="reviews__btn-wrapper">
+                <a href="#" class="reviews__btn">
+                    Смотреть все
+
+                </a>
+
+            </div>
+        </section>
+</div>
+
+    <!-- Секция панорамы -->
+
+<section class="panorama">
+    <div class="panorama__overlay">
+        <div class="panorama__content">
+            <p class="panorama__text">
+                Панорамный обзор 360° — откройте <br />
+                для себя всё пространство
+            </p>
+        </div>
+        <div class="panorama__btn_position">
+        <a href="#" class="panorama__btn">СМОТРЕТЬ 360°</a>
+        </div>
+    </div>
+</section>
+
+
+<section class="news">
+    <div class="news__header">
+        <h2 class="news__title">
+            Новости компании <span class="logo-text">Royal</span><br />
+            — всё, что стоит знать о наших проектах, партнёрствах и развитии.
+        </h2>
+    </div>
+
+    <div class="news__grid">
+        <div class="news__main">
+            <span class="news__date">12.06.25</span>
+            <div class="news__img-wrapper">
+                <img src="assets/images/news-main.png" alt="Main news" class="news__img" />
+                <a href="#" class="news__more">ПОДРОБНЕЕ</a>
+            </div>
+            <p class="news__text">
+                Путешествия, приключения, совершенство — все это можно найти в ROYAL RESORT!
+            </p>
+        </div>
+
+        <div class="news__side">
+            <div class="news__item">
+                <span class="news__date">12.06.25</span>
+                <div class="news__img-mini">
+                    <img src="assets/images/news1.png" alt="Новость 1" />
+                </div>
+                <p class="news__text">
+                    Стартовало строительство нового жилого комплекса бизнес-класса в центре города
+                </p>
+            </div>
+
+            <div class="news__item">
+                <span class="news__date">12.06.25</span>
+                <div class="news__img-mini">
+                    <img src="assets/images/news2.png" alt="Новость 2" />
+                </div>
+                <p class="news__text">
+                    Открыта предварительная регистрация на покупку квартир в новом ЖК от Royal
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="news__btn-wrapper">
+        <a href="#" class="reviews__btn">Смотреть все</a>
+    </div>
+</section>
+
+
+<section class="contact-form">
+    <div class="contact-form__content">
+        <h2 class="contact-form__title">
+            <span class="green">Доверьтесь нам</span><br />
+            мы приведём вас к вашему будущему дому.
+        </h2>
+
+        <form class="contact-form__form">
+            <input type="text" placeholder="Ваше имя" class="contact-form__input" />
+            <input type="tel" placeholder="Ваш номер телефона" class="contact-form__input" />
+            <a href="#" class="panorama__btn">
+                СМОТРЕТЬ 360°
+                <span></span>
+                <span></span>
+            </a>
+
+        </form>
+    </div>
+</section>
+
+
+
+
+    <!-- Подвал -->
+
+<footer class="footer">
+    <div class="footer__content">
+        <div class="footer__left">
+            <h3 class="footer__title">
+                Жилые и коммерческие<br />
+                проекты с душой и точностью
+            </h3>
+            <p class="footer__email">royal322@gmail.com</p>
+            <p class="footer__desc">
+                Мы создаем не просто здания — мы строим доверие, комфорт и уверенность в завтрашнем дне
+            </p>
+
+            <div class="footer__socials">
+                <a href="#">instagram ↗</a>
+                <a href="#">whatsapp ↗</a>
+                <a href="#">facebook ↗</a>
+            </div>
+        </div>
+
+        <div class="footer__right">
+            <div class="footer__phones">
+                <p>+996 556 111 444</p>
+                <p>+996 778 111 444</p>
+                <p>+996 700 111 444</p>
+            </div>
+            <p>г. Бишкек, ул. Кокомберген, 75</p>
+            <p>Пн-Пт  9:00 – 18:00<br />Сб    10:00 – 16:00</p>
+            <img src="assets/images/footer-building.png" alt="Здание" class="footer__img" />
+        </div>
+    </div>
+
+    <div class="footer__bottom">
+        <p>© 20XX Royal Construction</p>
+        <p>Made by: <strong>MOORE STUDIO</strong></p>
+    </div>
+</footer>
+    <script defer src="index.js"></script>
+</body>
+</html>
