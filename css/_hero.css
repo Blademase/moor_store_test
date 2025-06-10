@@ -8,7 +8,14 @@
     justify-content: center;
     overflow: hidden;
 }
-
+.hero_changeLang{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.hero_changeLang_images{
+ margin-left: 12px;
+}
 .hero__overlay {
     position: absolute;
     top: 0;
@@ -54,6 +61,7 @@
     text-decoration: none;
     font-weight: 300;
     font-size: 14px;
+    font-family: 'Gilroy', sans-serif;
 }
 .mobile_link{
     display: none;

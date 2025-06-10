@@ -2,7 +2,6 @@
     padding: 80px 60px;
     background-color: #fff;
 }
-
 .about__container {
     display: flex;
     justify-content: space-between;
@@ -10,6 +9,11 @@
     gap: 60px;
 }
 
+.about__desc_text__R{
+    font-family: 'pramodia', sans-serif ;
+    font-weight: 300 ;
+    font-size: 18px ;
+}
 .about__left {
     flex: 1;
     max-width: 45%;
@@ -21,6 +25,7 @@
     font-weight: 700;
     line-height: 1.5;
     text-transform: uppercase;
+    text-indent: 80px
 }
 
 .about__title .green {
@@ -51,8 +56,10 @@
 }
 
 .about__label {
+    font-family: 'florentia_regular', sans-serif;
+    font-style: italic;
     font-size: 14px;
-    color: #777;
+    color: #222222;
 }
 .about__label_mobile{
     display: none;
@@ -114,8 +121,13 @@
         line-height: 1.4;
         text-align: center;
         margin-bottom: 20px;
+        text-indent: 0px;
         text-transform: none;
     }
+    .about__desc_text{
+        font-family: Gilroy sans-serif;
+    }
+
 
     .about__img-large {
         width: 100%;

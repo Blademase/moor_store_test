@@ -12,6 +12,10 @@
     height: 100%;
     padding: 60px 0px;
 }
+.stats__logo_R{
+    font-family: 'pramodia', sans-serif;
+    font-weight: 300;
+}
 
 .stats__content {
     max-width: 1200px;

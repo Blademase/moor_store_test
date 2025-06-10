@@ -7,3 +7,21 @@
 @import "css/_news.css";
 @import "css/_constact.css";
 @import "css/_footer.css";
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./fonts/Gilroy/Gilroy-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'florentia_regular';
+    src: url('./fonts/florentia_regular/Florentia_Regular/Florentia-Regular-trial.ttf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'pramodia';
+    src: url("./fonts/pramodia/Pramodia - Demo.ttf") format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
